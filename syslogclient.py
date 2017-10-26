@@ -58,5 +58,5 @@ class Syslog:
     "Send a syslog error message."
     self.send(message, Level.ERR)
 
-log = Syslog(host="172.16.44.135")
-log.send("icx6610-01 : Logical link on interface ethernet slot1/port10 is down", Level.WARNING)
+log = Syslog(host="192.168.16.20")
+log.send("Linkdown 10/1", Level.WARNING)
